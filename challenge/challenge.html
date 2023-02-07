@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+    .placeholder{
+        height: 5vh;
+    }
+    #playfield{
+        height: 30vh;
+    }
+    .score{
+        margin: auto;
+        padding: vh;
+        width: 9rem;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+</style>
+</head>
+<body>
+    <header class="container">
+        <div class="row ">
+            <div class="col col-5 bg-dark text-light text-center" id="playerOneName">d</div>
+            <div class="col col-2 text-center bg-danger text-light">vs.</div>
+            <div class="col col-5 bg-light text-dark text-center" id="playerTwoName">d</div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row" id="playfield">
+            <div class="col col-6 bg-dark text-center">
+                <div class="placeholder"></div>
+                <input type="button" class="btn btn-success btn-lg" id="playerOneButton" value="Roll Dice">
+                <div class="placeholder"></div>
+                <div class="bg-light text-dark score" id="playerOneScore">...</div>
+                <div class="placeholder"></div>
+            </div>
+            <div class="col col-6 bg-light text-center">
+                <div class="placeholder"></div>
+                <input type="button" class="btn btn-success btn-lg" id="playerTwoButton" value="Roll Dice">
+                <div class="placeholder"></div>
+                <div class="bg-dark text-light score" id="playerTwoScore">...</div>
+                <div class="placeholder"></div>
+            </div>
+            <div class="row m-0 justify-content-center">
+                <div class="col col-6 bg-danger text-light text-center" id="gameResult">...w
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="challenge.js" type="module"></script>
+</body>
+</html>

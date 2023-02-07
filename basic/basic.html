@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic</title>
+    <style>
+        #outputField {
+            margin: 1rem 10rem;
+            border: 1px solid black;
+            min-height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <form id="_form" action="">
+        <div>
+            <label for="i_fname">First name:</label>
+            <input type="text" name="i_fname" id="i_fname">
+        </div>
+        <div>
+            <label for="i_lname">Last name:</label>
+            <input type="text" name="i_lname" id="i_lname">
+        </div>
+        <div>
+            <label for="i_age">Age:</label>
+            <input type="number" name="i_age" id="i_age">
+        </div>
+        <div>
+            <label for="i_profession">Profession:</label>
+            <select name="i_profession" id="i_profession">
+                <option value="purple">IT</option>
+                <option value="yellow">Hospitality</option>
+                <option value="green">Farming</option>
+            </select>
+        </div>
+    </form>
+
+    <div id="outputField">
+
+    </div>
+    <script src="basic.js"></script>
+</body>
+</html>
